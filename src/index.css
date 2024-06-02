@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:'Clash Display', sans-serif;
+}
+
+.animation-delay-1 {
+  animation-delay: 0.1s;
+}
+.animation-delay-2 {
+  animation-delay: 0.2s;
+}
+.animation-delay-3 {
+  animation-delay: 0.3s;
+}
+.animation-delay-4 {
+  animation-delay: 0.3s;
+}
+.animation-delay-5 {
+  animation-delay: 0.3s;
+}
+
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
