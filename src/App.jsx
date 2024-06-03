@@ -23,6 +23,11 @@ import user2 from "./assets/user2.png";
 import user3 from "./assets/user3.png";
 import user4 from "./assets/user4.png";
 import { BiSolidQuoteLeft } from "react-icons/bi";
+import BlackBG from "./assets/BlackBG.png"
+import iphone3 from "./assets/iphone3.png"
+import { FaApple } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
+import { IoCall } from "react-icons/io5";
 
 function App() {
   const queData = [
@@ -53,7 +58,7 @@ function App() {
   ];
   return (
     <div
-      className=" h-[1000vh] bg-cover bg-no-repeat"
+      className=" h-[990vh] bg-cover bg-no-repeat"
       style={{ backgroundImage: `url(${Background})` }}
     >
       <nav className="flex justify-between items-center pt-7 gap-10 mx-[10rem]">
@@ -320,6 +325,55 @@ function App() {
         </div>
       </div>
       {/* --------------------------Section7------------------------------------ */}
+      <div className="relative flex justify-center items-center mt-[12rem]">
+        <img src={BlackBG}></img>
+        <div className="absolute text-white left-[19rem]">
+          <p className="text-[2.8rem] font-extrabold tracking-tight">Ready To Get Started?</p>
+          <p className="text-gray-300 w-[500px] mt-1 mb-4">ReadRisus Habitant Leo Egestas Mauris Diam Eget Morbi Tempus Vulputate.</p>
+          <button className="flex justify-center items-center gap-2 text-black bg-white text-[1.1rem] font-medium rounded-md px-5 py-3">Download App <FaApple className="text-[2rem]"/> </button>
+        </div>
+        <div className="absolute right-[13.4rem]">
+          <img src={iphone3}></img>
+        </div>
+      </div>
+      {/* --------------------------Footer------------------------------------ */}
+      <div className="flex justify-center items-start mt-[18rem] gap-[5rem] font-semibold">
+        <ul className="flex flex-col gap-3 justify-start items-start mt-3">
+          <img className="h-[2rem] object-contain " src={logo}></img>
+          <li className="flex justify-center items-center gap-1 ml-1"><IoMail className="text-customRed"/> Help@Frybix.Com</li>
+          <li className="flex justify-center items-center gap-1 ml-1"><IoCall className="text-customRed"/> +1234 456 678 89</li>
+        </ul>
+
+        <ul className="flex flex-col gap-3 justify-start items-start">
+          <li className="font-bold text-[2rem] tracking-wide mb-1 ">Links</li>
+          <li>Home</li>
+          <li>About Us</li>
+          <li>Bookings</li>
+          <li>Blog</li>
+        </ul>
+        <ul className="flex flex-col gap-3 justify-start items-start">
+        <li className="font-bold text-[2rem] tracking-wide mb-1 ">Legal</li>
+        <li>Terms Of Use</li>
+        <li>Privacy Policy</li>
+        <li>Cookie Policy</li>
+        </ul>
+        <ul className="flex flex-col gap-3 justify-start items-start">
+        <li className="font-bold text-[2rem] tracking-wide mb-1 ">Product</li>
+        <li>Take Tour</li>
+        <li>Live Chat</li>
+        <li>Reviews</li>
+        </ul>
+        <ul className=" relative flex flex-col gap-3 justify-start items-start">
+        <li className="font-bold text-[2rem] tracking-wide mb-1 ">Newsletter</li>
+        <li>Stay Up To Date</li>
+        <input className="font-thin w-[19rem] bg-gray-100 p-5 rounded-md mt-3" type="text" placeholder="Your Email"></input>
+        <button className="absolute bg-black font-medium  text-white p-5 px-10 right-[0rem] bottom-[0rem] rounded-md">Subscribe</button>
+        </ul>
+      </div>
+      <div className="border-2 border-b-2 mt-[6rem] mx-[10rem]" ></div>
+      <div className="flex justify-center items-center font-semibold mt-[6rem] ">
+        <p>Copyright 2022 Uifry.Com All Rights Reserved</p>
+      </div>
     </div>
   );
 }
