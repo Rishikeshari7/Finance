@@ -79,7 +79,7 @@ function App() {
             Features
           </li>
         </ul>
-        <button className="text-white bg-black px-10 py-4 rounded-sm hover:bg-gray-800 transform transition-transform duration-300 hover:scale-105 animate-fadeItem">
+        <button className="text-white bg-black px-10 py-4 rounded-md border-2  transform transition-transform duration-300 hover:scale-105 hover:bg-transparent hover:text-black  hover:border-black animate-fadeItem">
           Download
         </button>
       </nav>
@@ -87,10 +87,10 @@ function App() {
       {/* --------------------------Section1------------------------------------ */}
       <div className="flex justify-end items-center gap-10 mt-[10rem]">
         <div className="flex flex-col gap-8">
-          <p className="text-[4rem] font-extrabold leading-[4rem] animate-fadeItem animation-delay-1">
+          <p className="text-[4rem] font-extrabold leading-[4rem] animate-fadeItem animation-delay-3">
             Make The Best <br /> Financial Decisions
           </p>
-          <p className="text-[1.2rem] font-medium text-gray-500  animate-fadeItem animation-delay-2">
+          <p className="text-[1.2rem] font-medium text-gray-500  animate-fadeItem animation-delay-3">
             Cum Et Convallis Risus Placerat Aliquam, Nunc. Scelerisque Aliquet{" "}
             <br /> Faucibus Tincidunt Eu Adipiscing Sociis Arcu Lorem Porttitor.
           </p>
@@ -105,29 +105,29 @@ function App() {
           </div>
           <div>
             <img
-              className="pl-10 pt-6 animate-fadeItem animation-delay-5 animate-float"
+              className="pl-10 pt-6 animate-float"
               src={Aimage}
             />
           </div>
         </div>
-        <div className="relative -mt-[19rem]">
+        <div className="relative -mt-[19rem] animate-fadeItem animation-delay-4">
           <img
             className="z-10 animate-fadeItem animation-delay-2"
             src={Ring}
             alt="Ring"
           />
           <img
-            className="absolute top-[135px] left-[180px] z-20 animate-fadeItem animation-delay-3 animate-float"
+            className="absolute top-[135px] left-[180px] z-20 animate-float"
             src={iphoneTop}
             alt="iPhone Top"
           />
           <img
-            className="absolute top-[55px] left-[60px] z-30 animate-fadeItem animation-delay-4 animate-float"
+            className="absolute top-[55px] left-[60px] z-30 animate-float"
             src={iphoneMiddle}
             alt="iPhone Middle"
           />
           <img
-            className="absolute top-[-35px] left-[-70px] z-40 animate-fadeItem animation-delay-5 animate-float"
+            className="absolute top-[-35px] left-[-70px] z-40 animate-float"
             src={iphoneTop}
             alt="iPhone Top"
           />
@@ -136,7 +136,7 @@ function App() {
       {/* --------------------------Section2------------------------------------ */}
       <div className="flex justify-center items-center gap-10 mt-[5rem] mr-[6rem] ">
         <div className="relative ">
-          <img className="z-10" src={Ring} />
+          <img className="z-10 animate-floatr" src={Ring} />
           <img
             className="absolute top-[55px] left-[170px] z-20 animate-float"
             src={iphoneTop2}
@@ -210,7 +210,7 @@ function App() {
           </p>
         </div>
         <div className="relative mt-10">
-          <img className="z-10" src={Ring} />
+          <img className="z-10 animate-floatr" src={Ring} />
           <img
             className="absolute top-[55px] left-[170px] z-20 animate-float"
             src={iphoneMiddle2}
@@ -220,13 +220,13 @@ function App() {
       {/* --------------------------Section4------------------------------------ */}
       <div className="flex justify-center items-center gap-[7rem] mt-[3rem]  ">
         <div className="relative ">
-          <img className="z-10" src={Ring} />
+          <img className="z-10 " src={Ring} />
           <img
             className="absolute top-[55px] left-[170px] animate-float"
             src={iphoneTop2}
           />
           <img
-            className="absolute top-[215px] right-[145px] animate-float"
+            className="absolute top-[215px] right-[145px] animate-floatr"
             src={Card}
           ></img>
         </div>
@@ -259,7 +259,7 @@ function App() {
         </div>
         <div className="flex justify-center items-center gap-[5rem]">
           <div className="relative mt-3">
-            <img className="z-10" src={Ring} />
+            <img className="z-10 animate-floatr" src={Ring} />
             <img
               className="absolute top-[175px] left-[190px] "
               src={centerUser}
@@ -312,10 +312,10 @@ function App() {
           {queData.map((item, index) => (
             <div
               key={index}
-              className={`rounded-lg p-7 shadow-lg transform transition duration-500 hover:scale-105 hover:shadow-xl ${
+              className={`rounded-lg p-7 shadow-lg transform transition duration-500 hover:scale-105  ${
                 [0, 3, 4].includes(index)
                   ? "bg-customRed text-white hover:bg-red-500"
-                  : "hover:bg-gray-100"
+                  : "hover:bg-gray-100 "
               }`}
             >
               <p className="text-[2rem] font-bold leading-9 mb-2">{item.que}</p>
@@ -325,49 +325,49 @@ function App() {
         </div>
       </div>
       {/* --------------------------Section7------------------------------------ */}
-      <div className="relative flex justify-center items-center mt-[12rem]">
+      <div className="relative flex justify-center items-center mt-[14rem]">
         <img src={BlackBG}></img>
         <div className="absolute text-white left-[19rem]">
           <p className="text-[2.8rem] font-extrabold tracking-tight">Ready To Get Started?</p>
           <p className="text-gray-300 w-[500px] mt-1 mb-4">ReadRisus Habitant Leo Egestas Mauris Diam Eget Morbi Tempus Vulputate.</p>
-          <button className="flex justify-center items-center gap-2 text-black bg-white text-[1.1rem] font-medium rounded-md px-5 py-3">Download App <FaApple className="text-[2rem]"/> </button>
+          <button className="flex justify-center items-center gap-2 text-black bg-white text-[1.1rem] font-medium rounded-md px-5 py-3 border-2 transform transition delay-100 hover:bg-black hover:text-white hover:border-white">Download App <FaApple className="text-[2rem]"/> </button>
         </div>
-        <div className="absolute right-[13.4rem]">
+        <div className="absolute right-[13.4rem] ">
           <img src={iphone3}></img>
         </div>
       </div>
       {/* --------------------------Footer------------------------------------ */}
       <div className="flex justify-center items-start mt-[18rem] gap-[5rem] font-semibold">
-        <ul className="flex flex-col gap-3 justify-start items-start mt-3">
+        <ul className="flex flex-col gap-3 justify-start items-start mt-3 ">
           <img className="h-[2rem] object-contain " src={logo}></img>
           <li className="flex justify-center items-center gap-1 ml-1"><IoMail className="text-customRed"/> Help@Frybix.Com</li>
           <li className="flex justify-center items-center gap-1 ml-1"><IoCall className="text-customRed"/> +1234 456 678 89</li>
         </ul>
 
         <ul className="flex flex-col gap-3 justify-start items-start">
-          <li className="font-bold text-[2rem] tracking-wide mb-1 ">Links</li>
+          <li className="font-bold text-[2rem] tracking-wide mb-1 hover:text-customRed ">Links</li>
           <li>Home</li>
           <li>About Us</li>
           <li>Bookings</li>
           <li>Blog</li>
         </ul>
         <ul className="flex flex-col gap-3 justify-start items-start">
-        <li className="font-bold text-[2rem] tracking-wide mb-1 ">Legal</li>
+        <li className="font-bold text-[2rem] tracking-wide mb-1 hover:text-customRed ">Legal</li>
         <li>Terms Of Use</li>
         <li>Privacy Policy</li>
         <li>Cookie Policy</li>
         </ul>
         <ul className="flex flex-col gap-3 justify-start items-start">
-        <li className="font-bold text-[2rem] tracking-wide mb-1 ">Product</li>
+        <li className="font-bold text-[2rem] tracking-wide mb-1 hover:text-customRed">Product</li>
         <li>Take Tour</li>
         <li>Live Chat</li>
         <li>Reviews</li>
         </ul>
         <ul className=" relative flex flex-col gap-3 justify-start items-start">
-        <li className="font-bold text-[2rem] tracking-wide mb-1 ">Newsletter</li>
+        <li className="font-bold text-[2rem] tracking-wide mb-1 hover:text-customRed">Newsletter</li>
         <li>Stay Up To Date</li>
         <input className="font-thin w-[19rem] bg-gray-100 p-5 rounded-md mt-3" type="text" placeholder="Your Email"></input>
-        <button className="absolute bg-black font-medium  text-white p-5 px-10 right-[0rem] bottom-[0rem] rounded-md">Subscribe</button>
+        <button className="absolute bg-black font-medium  text-white p-5 px-10 right-[0rem] bottom-[0rem] rounded-md  hover:bg-customRed hover:text-white hover:border-customRed">Subscribe</button>
         </ul>
       </div>
       <div className="border-2 border-b-2 mt-[6rem] mx-[10rem]" ></div>

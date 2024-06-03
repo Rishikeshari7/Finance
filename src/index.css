@@ -20,10 +20,10 @@
   animation-delay: 0.3s;
 }
 .animation-delay-4 {
-  animation-delay: 0.3s;
+  animation-delay: 0.4s;
 }
 .animation-delay-5 {
-  animation-delay: 0.3s;
+  animation-delay: 0.5s;
 }
 
 
@@ -43,3 +43,21 @@
   }
 }
 
+.animate-floatr {
+  animation: floatr 3s ease-in-out infinite;
+}
+
+@keyframes floatr {
+  0% {
+    transform: translateY(0);
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateY(-7px);
+    transform: translateX(7px);
+  }
+  100% {
+    transform: translateY(0);
+    transform: translateX(0);
+  }
+}
